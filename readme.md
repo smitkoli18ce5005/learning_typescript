@@ -4,3 +4,4 @@
 * Type assertion in typeScript
 * Functions in typeScript
 * Rest parameters
+* Object Types in typeScript
