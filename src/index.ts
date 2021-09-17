@@ -113,3 +113,31 @@
         console.log(person1.display())
     }
 }
+
+// Classes in typeScript
+{
+    // declare class
+    class Person {
+
+        //fields
+        name: string
+        age: number
+
+        //constructor
+        constructor(name: string, age: number){
+            this.name = name                 
+            this.age = age 
+        }
+
+        //methods
+        display(): string {return"Hello class"}
+    }
+    // initialize class
+    let person1 = new Person("Smit", 22)
+
+    {
+        console.log(person1.name)
+        console.log(person1.age)
+        console.log(person1.display())
+    }
+}

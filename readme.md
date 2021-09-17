@@ -6,3 +6,4 @@
 * Rest parameters
 * Object Types in typeScript
 * Interface in typeScript
+* Classes in typeScript
