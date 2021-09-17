@@ -45,8 +45,19 @@
             console.log(`Hello world, my name is ${name}!`);
         }
     }
+    // Rest parameters
+    function sum(...numArray) {
+        let i;
+        let sum = 0;
+        for (i = 0; i < numArray.length; i++) {
+            sum += numArray[i];
+        }
+        return sum;
+    }
     {
         myFunction("Smit");
         myFunction("Smit", 22);
+        console.log("Sum of numbers: " + sum(1, 2, 4, 78));
+        console.log("Sum of numbers: " + sum(1, 2, 4, 7, 5, 7, 9, 2, 3, 7, 9, 8));
     }
 }
