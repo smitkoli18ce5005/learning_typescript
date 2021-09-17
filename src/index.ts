@@ -12,6 +12,7 @@
         8.  arrays      -   Collection of items of same type
         9.  tuples      -   Collection of items of different type
         10. union       -   Allows to store values of two or more types
+        11. objects     -   Stores data in key value pairs
 */  
 {
     //  1.  any
@@ -30,6 +31,19 @@
     let tupleType = [1, "smit"]
     //  10. union
     let unionType: number | string = '1'
+    //  11. objects
+    let objectType:{name:string, age: number} = {
+        name: "Smit",
+        age: 22
+    }
+    type personObject = {
+        name: string,
+        age: number
+    }
+    let person1: personObject = {
+        name: "Smit",
+        age: 22
+    }
 
     {
         console.log("anyType: " +anyType)
@@ -39,6 +53,8 @@
         console.log("arrayType: " +arrayType)
         console.log("tupleType: " +tupleType)   
         console.log("unionType: " +unionType) 
+        console.log(objectType)
+        console.log(person1)
     }
 }
 

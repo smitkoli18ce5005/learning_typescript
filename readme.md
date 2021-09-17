@@ -7,3 +7,4 @@
 * Object Types in typeScript
 * Interface in typeScript
 * Classes in typeScript
+* Objects in typeScript
