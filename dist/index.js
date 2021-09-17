@@ -86,3 +86,17 @@
     //  3.  Array object
     let array = new Array(10);
 }
+// Interface in typeScript
+{
+    // initialize interface
+    let person1 = {
+        name: "smit",
+        age: 22,
+        display: () => { return "Hello interface"; }
+    };
+    {
+        console.log(person1.name);
+        console.log(person1.age);
+        console.log(person1.display());
+    }
+}

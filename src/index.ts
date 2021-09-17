@@ -91,3 +91,25 @@
     //  3.  Array object
     let array: number[] = new Array(10)
 }
+
+// Interface in typeScript
+{
+    // declare interface
+    interface personInterface {
+        name: string
+        age: number
+        display: ()=>string
+    }
+    // initialize interface
+    let person1: personInterface = {
+        name: "smit",
+        age: 22,
+        display: ():string => {return "Hello interface"} 
+    }
+
+    {
+        console.log(person1.name)
+        console.log(person1.age)
+        console.log(person1.display())
+    }
+}

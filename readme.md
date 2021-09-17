@@ -5,3 +5,4 @@
 * Functions in typeScript
 * Rest parameters
 * Object Types in typeScript
+* Interface in typeScript
