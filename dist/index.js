@@ -34,3 +34,19 @@
     let str1 = '10';
     let str2 = str1;
 }
+// Functions in typeScript
+{
+    // Basic Hello World function
+    function myFunction(name, age) {
+        if (age != undefined) {
+            console.log(`Hello world, my name is ${name}, I am ${age} years old!`);
+        }
+        else {
+            console.log(`Hello world, my name is ${name}!`);
+        }
+    }
+    {
+        myFunction("Smit");
+        myFunction("Smit", 22);
+    }
+}
