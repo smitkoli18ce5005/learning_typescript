@@ -8,3 +8,4 @@
 * Interface in typeScript
 * Classes in typeScript
 * Objects in typeScript
+* Inheritance, access modifiers and method overriding

@@ -132,3 +132,24 @@
         console.log(person1.display());
     }
 }
+//  Inheritance, access modifiers and method overriding
+{
+    class personClass {
+        constructor(age) {
+            this.age = age;
+        }
+        returnAge() { return this.age; }
+    }
+    class parentClass extends personClass {
+        constructor(name, age) {
+            super(age);
+            this.name = name;
+        }
+        display() { return `Name: ${this.name} Age: ${this.returnAge()}`; }
+    }
+    {
+        let personObject = new parentClass("Smit", 22);
+        console.log(personObject.name);
+        console.log(personObject.display());
+    }
+}

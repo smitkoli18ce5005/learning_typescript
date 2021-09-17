@@ -76,7 +76,7 @@
     }
 
     //  Rest parameters
-    function sum(...numArray:number[]): number {     // ? means optional argument
+    function sum(...numArray:number[]): number {     // ... means rest parameters (any number of arguments will be passed)
         let i: number
         let sum: number = 0
         for(i =0 ;i <numArray.length ; i++){
@@ -146,7 +146,7 @@
         }
 
         //methods
-        display(): string {return"Hello class"}
+        display(): string {return "Hello class"}
     }
     // initialize class
     let person1 = new Person("Smit", 22)
@@ -156,4 +156,34 @@
         console.log(person1.age)
         console.log(person1.display())
     }
+}
+
+//  Inheritance, access modifiers and method overriding
+{
+    interface personInterface {
+        name: string,
+    }
+    class personClass {
+        private age: number
+
+        constructor(age: number){
+            this.age = age
+        }
+        
+        protected returnAge(): number {return this.age} 
+    }
+    class parentClass extends personClass implements personInterface {
+        name: string
+        constructor(name: string, age: number){
+            super(age)
+            this.name= name
+        }
+        public display(): string {return `Name: ${this.name} Age: ${this.returnAge()}`}
+    }
+
+    {
+        let personObject = new parentClass("Smit", 22)
+        console.log(personObject.name)
+        console.log(personObject.display())
+    }   
 }
