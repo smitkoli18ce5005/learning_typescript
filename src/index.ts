@@ -29,5 +29,10 @@
         console.log("booleanType: " +booleanType)
         voidType()
     }
-    
+}
+
+//  Type assertion in typeScript
+{
+    let str1 = '10'
+    let str2: number = <number> <any> str1
 }

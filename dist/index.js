@@ -29,3 +29,8 @@
         voidType();
     }
 }
+//  Type assertion in typeScript
+{
+    let str1 = '10';
+    let str2 = str1;
+}
